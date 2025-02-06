@@ -1,0 +1,6 @@
+body {
+  scroll-behavior: smooth;
+}
+.isActive {
+  color: #06a055;
+}
