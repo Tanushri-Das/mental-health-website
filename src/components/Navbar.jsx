@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,48 +9,112 @@ const Navbar = () => {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
-
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+  };
+  const handleScroll = () => {
+    const sections = ["home", "services", "about", "pricing", "testimonial"];
+    const scrollPosition = window.scrollY + 100;
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+      if (element) {
+        const offsetTop = element.offsetTop;
+        const height = element.offsetHeight;
+        if (scrollPosition >= offsetTop && scrollPosition + height) {
+          setActive(section);
+        }
+      }
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  const handleScrollTo = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
   const navItems = (
     <ul className="font-medium flex flex-col md:flex-row lg:space-x-8 sm:space-x-4 space-y-2 md:space-y-0 p-4 md:p-0">
       <li>
-        <a
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={(e) => {
+            e.preventDefault();
+            handleCloseMenu();
+            handleScrollTo("home");
+          }}
           href="#home"
           className={`text-white ${active === "home" ? "isActive" : ""}`}
         >
           Home
-        </a>
+        </motion.a>
       </li>
       <li>
-        <a
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={(e) => {
+            e.preventDefault();
+            handleCloseMenu();
+            handleScrollTo("services");
+          }}
           href="#services"
           className={`text-white ${active === "services" ? "isActive" : ""}`}
         >
           Services
-        </a>
+        </motion.a>
       </li>
       <li>
-        <a
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={(e) => {
+            e.preventDefault();
+            handleCloseMenu();
+            handleScrollTo("about");
+          }}
           href="#about"
           className={`text-white ${active === "about" ? "isActive" : ""}`}
         >
           About Us
-        </a>
+        </motion.a>
       </li>
       <li>
-        <a
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={(e) => {
+            e.preventDefault();
+            handleCloseMenu();
+            handleScrollTo("pricing");
+          }}
           href="#pricing"
           className={`text-white ${active === "pricing" ? "isActive" : ""}`}
         >
           Pricing
-        </a>
+        </motion.a>
       </li>
       <li>
-        <a
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={(e) => {
+            e.preventDefault();
+            handleCloseMenu();
+            handleScrollTo("testimonial");
+          }}
           href="#testimonial"
           className={`text-white ${active === "testimonial" ? "isActive" : ""}`}
         >
           Testimonial
-        </a>
+        </motion.a>
       </li>
     </ul>
   );
@@ -97,7 +162,10 @@ const Navbar = () => {
             <li className="ps-4 pb-2">
               <a
                 href="#contact"
-                onClick={(e) => e.preventDefault()}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleCloseMenu();
+                }}
                 className="text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded inline-block"
               >
                 Contact Us
