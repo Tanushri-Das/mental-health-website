@@ -18,9 +18,9 @@ const WorkingStep = () => {
             How It Works
           </h2>
           <p className="text-lg md:w-1/2 mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
-            culpa repudiandae et, unde labore earum libero delectus accusantium
-            quibusdam error?
+            Our simple, step-by-step process ensures you receive the right
+            support tailored to your needs. Let’s get started on your journey to
+            mental well-being.
           </p>
         </div>
         <div className="flex flex-col md:w-4/5 mx-auto md:flex-row gap-8">
@@ -30,8 +30,8 @@ const WorkingStep = () => {
             </div>
             <h3 className="text-lg font-medium mt-8">Fill a form</h3>
             <p className="my-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
-              alias fugiat mollitia, enim sit quas!
+              Start by filling out a quick form that helps us understand your
+              needs and how we can assist you best.
             </p>
           </div>
           <div className="relative bg-white text-center rounded-lg p-6 flex-1">
@@ -40,8 +40,8 @@ const WorkingStep = () => {
             </div>
             <h3 className="text-lg font-medium mt-8">Get Matched</h3>
             <p className="my-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
-              alias fugiat mollitia, enim sit quas!
+              We will match you with the right professional or service based on
+              your preferences and goals.
             </p>
           </div>
           <div className="relative bg-white text-center rounded-lg p-6 flex-1">
@@ -50,8 +50,8 @@ const WorkingStep = () => {
             </div>
             <h3 className="text-lg font-medium mt-8">Schedule</h3>
             <p className="my-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
-              alias fugiat mollitia, enim sit quas!
+              Once matched, schedule your session at a time that suits you best
+              and start your journey to growth.
             </p>
           </div>
         </div>

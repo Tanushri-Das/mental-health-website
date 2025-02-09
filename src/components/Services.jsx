@@ -22,10 +22,10 @@ const Services = () => {
           <h2 className="text-4xl font-bold font-secondary text-heroBg">
             What Can We Do Together
           </h2>
+
           <p className="md:w-1/2 mx-auto">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
-            aspernatur adipisci consequuntur aut harum quasi doloribus maxime
-            accusamus explicabo a?
+            We provide compassionate support and proven strategies to help you
+            navigate relationships, self-growth, and emotional well-being.
           </p>
         </motion.div>
         <div className="py-12 md:w-4/5 mx-auto">
@@ -78,18 +78,16 @@ const Services = () => {
                     Couple Counseling
                   </h3>
                   <p className="mb-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    at rerum tempora dolores repudiandae asperiores iste
-                    quaerat, exercitationem, perferendis, explicabo non
-                    provident nisi.
+                    Strengthen your relationship through effective communication
+                    and mutual understanding.
                   </p>
                   <h4 className="text-xl font-medium text-black mb-4">
                     Benefits
                   </h4>
                   <ul className="list-disc list-inside space-y-3">
-                    <li>Understanding Relationship Dynamics</li>
-                    <li>Effective Communication Techniques</li>
-                    <li>Conflict Resolution Strategies</li>
+                    <li>Develop deeper emotional connections.</li>
+                    <li>Learn conflict resolution strategies.</li>
+                    <li>Enhance trust and communication.</li>
                   </ul>
                 </div>
                 <div className="md:w-1/2">
@@ -114,18 +112,16 @@ const Services = () => {
                     Parenting Skills
                   </h3>
                   <p className="mb-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    at rerum tempora dolores repudiandae asperiores iste
-                    quaerat, exercitationem, perferendis, explicabo non
-                    provident nisi.
+                    Build a nurturing and positive environment for your child’s
+                    emotional and mental well-being.
                   </p>
                   <h4 className="text-xl font-medium text-black mb-4">
                     Benefits
                   </h4>
                   <ul className="list-disc list-inside space-y-3">
-                    <li>Understanding Relationship Dynamics</li>
-                    <li>Understanding Relationship Dynamics</li>
-                    <li>Understanding Relationship Dynamics</li>
+                    <li>Improve parent-child bonding.</li>
+                    <li>Learn positive discipline techniques.</li>
+                    <li>Foster emotional intelligence in children.</li>
                   </ul>
                 </div>
                 <div className="md:w-1/2">
@@ -150,18 +146,16 @@ const Services = () => {
                     Feeling Stuck
                   </h3>
                   <p className="mb-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    at rerum tempora dolores repudiandae asperiores iste
-                    quaerat, exercitationem, perferendis, explicabo non
-                    provident nisi.
+                    Overcome emotional barriers and regain clarity to move
+                    forward in life.
                   </p>
                   <h4 className="text-xl font-medium text-black mb-4">
                     Benefits
                   </h4>
                   <ul className="list-disc list-inside space-y-3">
-                    <li>Understanding Relationship Dynamics</li>
-                    <li>Understanding Relationship Dynamics</li>
-                    <li>Understanding Relationship Dynamics</li>
+                    <li>Identify and break negative thought patterns.</li>
+                    <li>Develop coping strategies for stress and anxiety.</li>
+                    <li>Set clear and achievable personal goals.</li>
                   </ul>
                 </div>
                 <div className="md:w-1/2">
@@ -186,18 +180,16 @@ const Services = () => {
                     Self-Confidence
                   </h3>
                   <p className="mb-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    at rerum tempora dolores repudiandae asperiores iste
-                    quaerat, exercitationem, perferendis, explicabo non
-                    provident nisi.
+                    Boost your self-esteem and cultivate a positive mindset for
+                    personal growth.
                   </p>
                   <h4 className="text-xl font-medium text-black mb-4">
                     Benefits
                   </h4>
                   <ul className="list-disc list-inside space-y-3">
-                    <li>Understanding Relationship Dynamics</li>
-                    <li>Understanding Relationship Dynamics</li>
-                    <li>Understanding Relationship Dynamics</li>
+                    <li>Build self-awareness and resilience.</li>
+                    <li>Develop a growth-oriented mindset.</li>
+                    <li>Overcome self-doubt and fear of failure.</li>
                   </ul>
                 </div>
                 <div className="md:w-1/2">

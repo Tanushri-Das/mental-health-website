@@ -61,8 +61,8 @@ const Contact = () => {
                 <div className="space-y-1">
                   <h3 className="text-lg font-medium">24 Hours Services</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Enim.
+                    We provide 24/7 services to ensure you're always supported,
+                    no matter the time of day.
                   </p>
                 </div>
               </div>
@@ -73,8 +73,8 @@ const Contact = () => {
                 <div className="space-y-1">
                   <h3 className="text-lg font-medium">Expert Therapist</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Enim.
+                    Our certified therapists offer specialized care for various
+                    needs, ensuring professional and attentive support.
                   </p>
                 </div>
               </div>
@@ -85,8 +85,8 @@ const Contact = () => {
                 <div className="space-y-1">
                   <h3 className="text-lg font-medium">High Quality Care</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Enim.
+                    We deliver high-quality care using advanced equipment and
+                    techniques, putting your health and comfort first.
                   </p>
                 </div>
               </div>
@@ -97,8 +97,8 @@ const Contact = () => {
                 <div className="space-y-1">
                   <h3 className="text-lg font-medium">Trusted Clinic</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Enim.
+                    Our clinic is trusted for its reliability and years of
+                    experience, providing dependable care for your health.
                   </p>
                 </div>
               </div>

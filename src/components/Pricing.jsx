@@ -30,12 +30,12 @@ const Pricing = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold font-secondary mb-3">
-            Perfect for Small & Large Brands
+            Affordable Pricing for Every Business
           </h2>
           <p className="text-lg mb-12 md:w-2/3 mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quos
-            assumenda, animi itaque libero et? Nihil minus debitis possimus
-            quasi laboriosam ab, adipisci officia nobis!
+            Whether you're a small startup or a large enterprise, our flexible
+            pricing plans are designed to meet your unique needs, helping you
+            grow without breaking the bank.
           </p>
         </motion.div>
 

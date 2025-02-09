@@ -27,8 +27,8 @@ const Footer = () => {
             <img src={footerLogo} alt="" className="w-32 h-auto" />
           </div>
           <p className="text-para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            blanditiis commodi unde beatae optio veritatis!
+            Providing reliable and professional services to cater to all your
+            needs.
           </p>
           <div className="flex space-x-4">
             <a
