@@ -136,6 +136,10 @@ const Navbar = () => {
           <button className="hidden md:block">
             <a
               href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                handleScrollTo("contact");
+              }}
               className="text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded"
             >
               Contact Us
@@ -165,6 +169,7 @@ const Navbar = () => {
                 onClick={(e) => {
                   e.preventDefault();
                   handleCloseMenu();
+                  handleScrollTo("contact");
                 }}
                 className="text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded inline-block"
               >

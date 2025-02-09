@@ -25,10 +25,9 @@ body {
 
 .react-tabs__tab--selected {
   background: #fff;
-  border-color: white !important;
   color: black;
-  border-radius: 5px;
-  outline: none;
+  border-radius: 5px 5px 0 0;
+  border: none !important; /* Default border remove */
 }
 
 .react-tabs__tab-panel {
