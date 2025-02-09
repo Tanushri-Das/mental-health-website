@@ -1,6 +1,8 @@
 import React from "react";
 import heroImg from "../assets/hero.webp";
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utilis/animationVariants";
 
 const Hero = () => {
   return (
@@ -10,7 +12,13 @@ const Hero = () => {
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between p-8 overflow-y-hidden gap-12 h-full pt-28">
         {/* left side */}
-        <div className="md:w-1/2">
+        <motion.div
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="md:w-1/2"
+        >
           <h1 className="text-4xl font-secondary font-bold mb-4 md:w-3/5 leading-snug">
             Start Your Journey to Mental Wellness
           </h1>
@@ -26,11 +34,17 @@ const Hero = () => {
               <IoArrowForwardCircleSharp />
             </a>
           </button>
-        </div>
+        </motion.div>
         {/* right side */}
-        <div className="md:w-1/2 h-full">
+        <motion.div
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="md:w-1/2 h-full"
+        >
           <img src={heroImg} alt="hero image" className="w-full object-cover" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

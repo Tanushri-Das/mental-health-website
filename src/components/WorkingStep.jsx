@@ -1,10 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utilis/animationVariants";
 
 const WorkingStep = () => {
   return (
     <div className="relative bg-cover bg-center py-12 bg-[url(/work-proceess.webp)]">
       <div className="absolute inset-0 bg-heroBg opacity-85"></div>
-      <div className="relative container mx-auto px-4 py-20">
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="relative container mx-auto px-4 py-20"
+      >
         <div className="text-white text-center mb-20">
           <h2 className="text-4xl font-bold font-secondary mb-4">
             How It Works
@@ -47,7 +55,7 @@ const WorkingStep = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

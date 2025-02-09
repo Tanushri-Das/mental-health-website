@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FaEnvelope, FaGlobe, FaPhoneAlt, FaUserAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utilis/animationVariants";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -41,7 +43,13 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:gap-12 gap-8">
           {/* left */}
-          <div className="space-y-8">
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="space-y-8"
+          >
             <h2 className="text-4xl font-bold font-secondary mb-4 text-white">
               Make an appointment
             </h2>
@@ -95,9 +103,15 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* right */}
-          <div className="space-y-8 p-8 bg-white shadow-xl rounded-md">
+          <motion.div
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="space-y-8 p-8 bg-white shadow-xl rounded-md"
+          >
             <h3 className="text-2xl font-bold mb-4">Book Appointment</h3>
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="flex sm:flex-row flex-col gap-4">
@@ -146,7 +160,7 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
       {showModal && (

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BsFillChatQuoteFill } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utilis/animationVariants";
 
 const Testimonial = () => {
   const [testimonial, setTestimonial] = useState([]);
@@ -11,7 +13,13 @@ const Testimonial = () => {
   return (
     <div id="testimonial" className="bg-[#f7f8fc] py-12">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="text-center mb-12"
+        >
           <h2 className="text-4xl font-bold font-secondary mb-3">
             What Our Clients Say
           </h2>
@@ -19,8 +27,14 @@ const Testimonial = () => {
             Hear from some of our satisfied clients about how our services have
             positively impacted their lives and well-being.
           </p>
-        </div>
-        <div className="flex flex-col md:w-4/5 mx-auto md:flex-row md:gap-12 gap-8">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="flex flex-col md:w-4/5 mx-auto md:flex-row md:gap-12 gap-8"
+        >
           {testimonial.map((review, index) => (
             <div
               key={index}
@@ -45,7 +59,7 @@ const Testimonial = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

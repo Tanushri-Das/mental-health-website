@@ -9,12 +9,20 @@ import {
   FaPhoneAlt,
   FaTwitter,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utilis/animationVariants";
 
 const Footer = () => {
   return (
     <div className="py-12 bg-gray-100 px-8">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        <div className="space-y-6 mr-14">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="space-y-6 mr-14"
+        >
           <div className="flex items-center space-x-2">
             <img src={footerLogo} alt="" className="w-32 h-auto" />
           </div>
@@ -48,8 +56,14 @@ const Footer = () => {
               <FaLinkedin className="text-xl" />
             </a>
           </div>
-        </div>
-        <div className="space-y-6">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="space-y-6"
+        >
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-3">
             <li>
@@ -73,8 +87,14 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
-        <div className="space-y-6">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="space-y-6"
+        >
           <h3 className="text-xl font-semibold mb-4">Support</h3>
           <ul className="space-y-3">
             <li>
@@ -98,8 +118,14 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
-        <div className="space-y-6">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="space-y-6"
+        >
           <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
           <ul className="space-y-3">
             <li className="flex items-center gap-2">
@@ -115,7 +141,7 @@ const Footer = () => {
               <p className="text-gray-700">info@mindleap.com</p>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

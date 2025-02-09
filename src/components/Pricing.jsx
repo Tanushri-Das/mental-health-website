@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utilis/animationVariants";
 
 const Pricing = () => {
   const [packages, setPackages] = useState([]);
@@ -20,7 +22,13 @@ const Pricing = () => {
   return (
     <div id="pricing" className="bg-[#f7f8fc] pt-32">
       <div className="container mx-auto px-8">
-        <div className="text-center mb-12">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="text-center mb-12"
+        >
           <h2 className="text-4xl font-bold font-secondary mb-3">
             Perfect for Small & Large Brands
           </h2>
@@ -29,9 +37,15 @@ const Pricing = () => {
             assumenda, animi itaque libero et? Nihil minus debitis possimus
             quasi laboriosam ab, adipisci officia nobis!
           </p>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col md:flex-row gap-8 pb-12 justify-center items-stretch text-center">
+        <motion.div
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="flex flex-col md:flex-row gap-8 pb-12 justify-center items-stretch text-center"
+        >
           {packages.map((pkg, index) => (
             <div
               key={index}
@@ -62,7 +76,7 @@ const Pricing = () => {
               </button>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
